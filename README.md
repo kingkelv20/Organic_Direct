@@ -1,0 +1,1 @@
+Welcome to the Organic Direct repository! This repository serves as the central hub for the development of the Organic Direct project, an innovative platform aimed at connecting consumers and farmers for easy access to organic produce.
