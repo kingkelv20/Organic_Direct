@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.logo {
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 18px;    
+}
+.logo h2 {
+    color: #F1C40F;
+    background: #3F301D;
+    font-size: 32px;
+    border-radius: 50%;
+    padding: 0 12px;
+}
+.sign-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+    background: #F7F9F9;
+}
+.create-account, .log-in{
+    border: 2px solid #186A3B;
+    width: 400px;
+    padding: 24px 12px;
+    border-radius: 10px;
+    justify-content: center;
+    overflow-x: auto;
+    background: #F0F3F4;
+}
+
+.create-account > h3, .log-in > h3{
+    font-size: 28px;
+    font-family: 'Berlin Sans FB';   
+    font-weight: 400;
+}
+.create-account > p{
+    margin-bottom: 18px;
+}
+.create-account > button, .log-in > button{
+    position: relative;
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    font-size: 28px;
+    padding: 4px 0;
+    font-family: 'Berlin Sans FB';
+    cursor: pointer;
+    background: #F1C40F;
+}
+
+button:hover {
+    background: #D4AC0F;
+}
+
+.info-field {
+    padding-bottom: 16px;
+}
+.info-field > input {
+    border: 1px solid #186A3B;
+    height: 38px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0 12px;
+    font-size: 18px;
+}
+.info-field > p {
+    font-weight: 400;
+    font-family: 'Berlin Sans FB';
+}
+.log-in > p {
+    padding-top: 50px;
+    text-align: center;
+}
+.bottom-text {
+    text-align: center;
+    padding: 20px;
+}

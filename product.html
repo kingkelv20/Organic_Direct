@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>OrgaDirect</title>
+        <link rel="stylesheet" href="styles\main.css">
+        <link rel="stylesheet" href="styles\searchBar.css">
+        <link rel="stylesheet"
+              href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h2 >OrgaDirect</h2>
+            </div>
+            <div class="searchBar">
+                <form>
+                    <input type="text" placeholder="Search for anything" name="x">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                </form>
+            </div>
+            <div class="topIcons">
+                <a href="#"><i class='bx bx-cart'></i></a>
+                <a href="#"><i class='bx bx-user'></i></a>
+                <a href="#"><i class='bx bx-menu'></i></a>
+            </div>
+        </header>
+        <section class="section-product-desc">
+            <div class="product-description">
+                <div class="product-details">
+                    <img id="ppd">
+                    <div class="product-info">
+                        <div class="status" id="status">
+                            <p></p>
+                        </div>
+
+                        <div class="product-title" id="pTitle">
+                            <h2>
+                            </h2>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="product-price">
+                            <span class="unit-price">$ </span>
+                            <p>/ per </p>
+                            <span class="unit-type"></span>
+                        </div>
+                        <h4 id="origin"><span>Origin : </span></h4>
+                        <h4 id="owner"><span>Owner : </span></h4>
+                        <h4 id="location"><span>Location : </span></h4>
+
+                        <div class="buy-button">
+                            <button type="button">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="farm-info">
+                    <h3>Contact the Farm</h3>
+                    <a href="#" id="farm-name"></a>
+                    <div class="farm-social-media">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more">
+                <a href="#similar">
+                    View Similar products
+                </a>
+            </div>
+        </section>
+
+        <!--Similar items section-->
+        <section id="similar" class="similar-items-section">
+            <div class="similar-title">
+                <h2> Similar products </h2>
+            </div>
+            <div class="horizontal-scroll">
+                <div class="scroll-button">
+                    <div class="scroll-arrow" onclick="scroll_left()">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </div>
+                </div>
+                <div class="similar-products snaps-inline">
+                    <div class="similar-item">
+                        <img src="images/cucumber.jpg" alt="">
+                        <div class="status">
+                            <p>Available</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Cucumber</h4>
+                                <p>Price : $2/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/carrots.jpg" alt="">
+                        <div class="status">
+                            <p>Available</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Carrots</h4>
+                                <p>Price : $7.5/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+
+                        <img src="images/chinese-cabbage.jpg" alt="">
+
+                        <div class="status">
+                            <p>Ready</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Chinese Cabbage</h4>
+                                <p>Price : $1.5/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/coconut.jpg" alt="">
+                        <div class="status">
+                            <p>Ready</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Coconut</h4>
+                                <p>Price : $2.99/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/courget.jpg" alt="">
+                        <div class="status">
+                            <p>Available</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Green Courget</h4>
+                                <p>Price : $1.99/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/green-beans.jpg" alt="">
+                        <div class="status">
+                            <p>Available</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Green Beans</h4>
+                                <p>Price : $1/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/lemons.jpg" alt="">
+                        <div class="status">
+                            <p>Available</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Green Lemons</h4>
+                                <p>Price : $5/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/oranges.jpg" alt="">
+                        <div class="status">
+                            <p>Available</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Oranges</h4>
+                                <p>Price : $6/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/oranges2.jpg" alt="">
+                        <div class="status">
+                            <p>Available</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Green Oranges</h4>
+                                <p>Price : $6.5/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/pumkin.jpg" alt="">
+                        <div class="status">
+                            <p>Limited</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Squash</h4>
+                                <p>Price : $6.5/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="images/red-pepper.jpg" alt="">
+                        <div class="status">
+                            <p>Available</p>
+                        </div>
+                        <div class="info">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <div class="price">
+                                <h4>Red Pepper</h4>
+                                <p>Price : $6.5/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-button right-scroll">
+                    <div class="scroll-arrow" onclick="scroll_right()">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contact section-->
+        <section class="contact">
+            <div class="contact-info">
+                <div class="first-info">
+                    <div class="bottom-logo">
+                        <h2>OrgaDirect</h2>
+                    </div>
+                    <p>Protofolio Project</p>
+                    <p>elisereflorbusole@gmail.com</p>
+                    <p>kelvinagimogim@gmail.com</p>
+                    <p>By : Elisee B., Kelvin A.</p>
+
+                    <div class="social-media-bottom">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <div class="second-info">
+                    <h4>Support</h4>
+                    <p>Contact us</p>
+                    <p>About project</p>
+                    <p>Shopping & return </p>
+                    <p>Privacy</p>
+                </div>
+                <div class="third-info">
+                    <h4>Buy</h4>
+                    <p>Vegetables</p>
+                    <p>Fruits and juices</p>
+                    <p>Honey</p>
+                    <p>Orgnanic Plants</p>
+                </div>
+                <div class="fourth-info">
+                    <h4>Project</h4>
+                    <p>About</p>
+                    <p>The team</p>
+                    <p>Documentation</p>
+                    <p>Acknowledgments</p>
+                    <p>Github</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="bottom-text">
+            <p>Copyright © @OrgaDirect. All Rights reserved.</p>
+        </div>
+        <script src="productScript.js"></script>
+    </body>
+</html>

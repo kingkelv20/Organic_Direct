@@ -1,0 +1,197 @@
+{
+  "product.1": {
+    "id": 1,
+    "name": "Yellow Apples",
+    "img": "images/yellow-apple.jpg",
+    "status": "available",
+    "price": 3,
+    "unit": "kg",
+    "description": "These apples are produced in a rural area",
+    "rating": 4.5,
+    "farm-id": 1
+  },
+  "product.2": {
+    "id": 2,
+    "name": "Carrots",
+    "img": "images/carrots.jpg",
+    "status": "Not Ready",
+    "price": 5,
+    "unit": "kg",
+    "description": "Healthy carrots with very sweet taste",
+    "rating": 4,
+    "farm-id": 3
+  },
+  "product.3": {
+    "id": 3,
+    "name": "Cheeder cheese",
+    "img": "images/cheese.jpg",
+    "status": "Not Ready",
+    "price": 20,
+    "unit": "kg",
+    "description": "Fresh cheese kept in high mountains",
+    "rating": 3,
+    "farm-id": 4
+  },
+  "product.4": {
+    "id": 4,
+    "name": "Cucumber",
+    "img": "images/cucumber.jpg",
+    "status": "Ready",
+    "price": 2.5,
+    "unit": "kg",
+    "description": "Freshly harvested from private garden",
+    "rating": 4,
+    "farm-id": 2
+  },
+  "product.5": {
+    "id": 5,
+    "name": "Maize",
+    "img": "images/dried-maize.jpg",
+    "status": "Ready",
+    "price": 2,
+    "unit": "kg",
+    "description": "",
+    "rating": 4,
+    "farm-id": 2
+  },
+  "product.6": {
+    "id": 6,
+    "name": "Oranges",
+    "img": "images/oranges.jpg",
+    "status": "Ready",
+    "price": 6,
+    "unit": "kg",
+    "description": "Big, Juicy Oranges from private farm",
+    "rating": 4,
+    "farm-id": 3
+  },
+  "product.7": {
+    "id": 7,
+    "name": "Red Apples",
+    "img": "images/growing-red-apples.jpg",
+    "status": "Not Ready",
+    "price": 10,
+    "unit": "kg",
+    "description": "Fresh apples from high mountains",
+    "rating": 4.5,
+    "farm-id": 3
+  },
+  "product.8": {
+    "id": 8,
+    "name": "Courget",
+    "img": "images/courget.jpg",
+    "status": "Ready",
+    "price": 1.3,
+    "unit": "kg",
+    "description": "Green courget from private gardens",
+    "rating": 3.5,
+    "farm-id": 2
+  },
+  "product.9": {
+    "id": 9,
+    "name": "Lemon",
+    "img": "images/lemons.jpg",
+    "status": "Not Ready",
+    "price": 2.8,
+    "unit": "kg",
+    "description": "Green lemons Will be ready in a month",
+    "rating": 3,
+    "farm-id": 1
+  },
+  "product.10": {
+    "id": 10,
+    "name": "Berries",
+    "img": "images/berries.jpg",
+    "status": "Ready",
+    "price": 10,
+    "unit": "kg",
+    "description": "Fresh berries harvested mannually",
+    "farm-id": 1,
+    "rating": 3.5
+  },
+  "product.11": {
+    "id": "11",
+    "img": "images/carrots.jpg",
+    "status": "Not Ready",
+    "name": "Carrrots",
+    "price": 12,
+    "unit": "kg",
+    "origin": "farm1",
+    "farm-id": 2,
+    "rating": 4.7
+  },
+  "product.12": {
+    "id": "12",
+    "img": "images/coconut.jpg",
+    "status": "Not Ready",
+    "name": "Coconut",
+    "price": 4,
+    "unit": "kg",
+    "origin": "farm1",
+    "farm-id": 2,
+    "rating": 4.7
+  },
+  "product.13": {
+    "id": "13",
+    "img": "images/chinese-cabbage.jpg",
+    "status": "Not Ready",
+    "name": "Chinese cabbage",
+    "price": 4,
+    "unit": "kg",
+    "origin": "farm1",
+    "farm-id": 2,
+    "rating": 4.7
+  },
+  "product.14": {
+    "id": "14",
+    "img": "images/growing-tomato.jpg.jpg",
+    "status": "Not Ready",
+    "name": "Tomatoes",
+    "price": 3,
+    "unit": "kg",
+    "origin": "farm1",
+    "farm-id": 2,
+    "rating": 4.7
+  },
+
+  "farm.1": {
+    "id": "1",
+    "name": "St Louis Farm",
+    "owner": "George GIthui",
+    "location": "Naivasha, Kenya",
+    "street": "Charles Av./ Kinboy Street",
+    "phone": "+254 712845937",
+    "office": "+254 227597473",
+    "email": "saintlouis@yahoo.com"
+  },
+  "farm.2": {
+    "id": 2,
+    "name": "Simpson Farm",
+    "owner": "Felix Simpson",
+    "location": "Mombasa,Kenya",
+    "street": "Av. Johnson, 254",
+    "phone": "+254 2393447949",
+    "office": "+254 1126849230",
+    "email": "simpson@gmail.com"
+  },
+  "farm.3": {
+    "id": 3,
+    "name": "Great Grean Farm",
+    "owner": "John Simiyu",
+    "location": "Western, Kenya",
+    "street": "Av. Kinvish, 254",
+    "phone": "+254 399474879",
+    "office": "+254 104884923",
+    "email": "grean254@gmail.com"
+  },
+  "farm.4": {
+    "id": 4,
+    "name": "John Dairy Farm",
+    "owner": "John Simiyu",
+    "location": "Western, Kenya",
+    "street": "Av. Kinvish, 254",
+    "phone": "+254 399474879",
+    "office": "+254 104884923",
+    "email": "johnDairy@gmail.com"
+  }
+}
