@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>OrgaDirect</title>
-    <link rel="stylesheet" href="styles\signUp.css">
+    <link rel="stylesheet" href="/static/styles/signUp.css">
     <link rel="stylesheet"
           href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
@@ -14,7 +14,7 @@
                 <h2>OrgaDirect</h2>
             </div>
             <h3>Create account </h3>
-            <p>You have an account ? <a href="sign_in.html">Sign in</a></p> 
+            <p>You have an account ? <a href="/orgadirect/login/">Sign in</a></p> 
             <div class="info-field">
                 <p>First Name*</p>
                 <input type="text" required />
@@ -45,5 +45,6 @@
     <div class="bottom-text">
         <p>Copyright � @OrgaDirect. All Rights reserved.</p>
     </div>
+    <script src="{{url_for('static', filename='/js/signingForm.js')}}"></script>
 </body>
 </html>

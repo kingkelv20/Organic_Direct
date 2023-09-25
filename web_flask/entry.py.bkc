@@ -1,0 +1,31 @@
+#!/usr/bin/python3
+"""
+starts a Flask web application
+and define routes
+"""
+
+from flask import Flask, render_template
+app = Flask(__name__)
+
+
+@app.route('/orgadirect/', strict_slashes=False)
+def index():
+    """ Returns the main page """
+    return render_template("main.html")
+
+@app.route('/orgadirect/sing_up/', strict_slashes=False)
+def signing_up():
+    """ Returns the sign up page """
+    return render_template("sign_up.html")
+
+@app.route('/orgadirect/sign_in/', strict_slashes=False)
+def signing_in():
+    """ Returns the sing in page """
+    return render_template("sign_in.html")
+
+"""@app.route('/orgadirect/product/<int:n>/', strick_slashes=False)
+def poduct_description():
+    return render_templa
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')

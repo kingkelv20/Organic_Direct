@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>OrgaDirect</title>
-        <link rel="stylesheet" href="styles\main.css">
-        <link rel="stylesheet" href="styles\searchBar.css">
+        <link rel="stylesheet" href="/static/styles/main.css">
+        <link rel="stylesheet" href="/static/styles/searchBar.css">
         <link rel="stylesheet"
               href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -29,15 +29,19 @@
         <section class="section-product-desc">
             <div class="product-description">
                 <div class="product-details">
-                    <img id="ppd">
+
+		    <img src="{{ product['img'] }}">
+
                     <div class="product-info">
-                        <div class="status" id="status">
-                            <p></p>
+                        <div class="status">
+			  <p>{{ product['status'] }}</p>
                         </div>
 
                         <div class="product-title" id="pTitle">
                             <h2>
+				    {{ product['name'] }}
                             </h2>
+			    <p> {{ product['description'] }}</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -47,13 +51,13 @@
                             <i class='bx bx-star'></i>
                         </div>
                         <div class="product-price">
-                            <span class="unit-price">$ </span>
-                            <p>/ per </p>
-                            <span class="unit-type"></span>
+			    <span class="unit-price">$ {{ product['price'] }}</span>
+                            <p> per </p>
+			    <span class="unit-type">{{ product['unit'] }}</span>
                         </div>
-                        <h4 id="origin"><span>Origin : </span></h4>
-                        <h4 id="owner"><span>Owner : </span></h4>
-                        <h4 id="location"><span>Location : </span></h4>
+			<h4 id="origin"><span>Origin : </span>{{ farm['name'] }}</h4>
+			<h4 id="owner"><span>Owner : </span>{{ farm['owner'] }}</h4>
+			<h4 id="location"><span>Location : </span>{{ farm['location'] }}</h4>
 
                         <div class="buy-button">
                             <button type="button">ORDER NOW</button>
@@ -62,8 +66,13 @@
                 </div>
                 <div class="farm-info">
                     <h3>Contact the Farm</h3>
-                    <a href="#" id="farm-name"></a>
-                    <div class="farm-social-media">
+		    <a href="#" id="farm-name">{{ farm['name'] }}</a>
+		    <p>{{ farm['location'] }}</p>
+		    <p>{{ farm['street'] }}</p>
+		    <p>{{ farm['phone'] }}</p>
+		    <p>{% if 'office' in farm %} {{ farm['office'] }} {% endif %}</p>
+		    <p>{{ farm['email'] }}</p>
+                    <div class="farm-social-media">    
                         <a href="#"><i class='bx bxl-instagram'></i></a>
                         <a href="#"><i class='bx bxl-facebook-circle'></i></a>
                         <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -91,7 +100,7 @@
                 </div>
                 <div class="similar-products snaps-inline">
                     <div class="similar-item">
-                        <img src="images/cucumber.jpg" alt="">
+                        <img src="/static/images/cucumber.jpg" alt="">
                         <div class="status">
                             <p>Available</p>
                         </div>
@@ -110,7 +119,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/carrots.jpg" alt="">
+                        <img src="/static/images/carrots.jpg" alt="">
                         <div class="status">
                             <p>Available</p>
                         </div>
@@ -130,7 +139,7 @@
                     </div>
                     <div class="similar-item">
 
-                        <img src="images/chinese-cabbage.jpg" alt="">
+                        <img src="/static/images/chinese-cabbage.jpg" alt="">
 
                         <div class="status">
                             <p>Ready</p>
@@ -150,7 +159,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/coconut.jpg" alt="">
+                        <img src="/static/images/coconut.jpg" alt="">
                         <div class="status">
                             <p>Ready</p>
                         </div>
@@ -169,7 +178,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/courget.jpg" alt="">
+                        <img src="/static/images/courget.jpg" alt="">
                         <div class="status">
                             <p>Available</p>
                         </div>
@@ -188,7 +197,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/green-beans.jpg" alt="">
+                        <img src="/static/images/green-beans.jpg" alt="">
                         <div class="status">
                             <p>Available</p>
                         </div>
@@ -207,7 +216,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/lemons.jpg" alt="">
+                        <img src="/static/images/lemons.jpg" alt="">
                         <div class="status">
                             <p>Available</p>
                         </div>
@@ -226,7 +235,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/oranges.jpg" alt="">
+                        <img src="/static/images/oranges.jpg" alt="">
                         <div class="status">
                             <p>Available</p>
                         </div>
@@ -245,7 +254,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/oranges2.jpg" alt="">
+                        <img src="/static/images/oranges2.jpg" alt="">
                         <div class="status">
                             <p>Available</p>
                         </div>
@@ -264,7 +273,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/pumkin.jpg" alt="">
+                        <img src="/static/images/pumkin.jpg" alt="">
                         <div class="status">
                             <p>Limited</p>
                         </div>
@@ -283,7 +292,7 @@
                         </div>
                     </div>
                     <div class="similar-item">
-                        <img src="images/red-pepper.jpg" alt="">
+                        <img src="/static/images/red-pepper.jpg" alt="">
                         <div class="status">
                             <p>Available</p>
                         </div>
@@ -358,6 +367,7 @@
         <div class="bottom-text">
             <p>Copyright © @OrgaDirect. All Rights reserved.</p>
         </div>
-        <script src="productScript.js"></script>
+        <script src="{{url_for('static', filename='/js/productScript.js')}}"></script>
+	<script src="{{url_for('static', filename='/js/jscript.js')}}"></script>
     </body>
 </html>

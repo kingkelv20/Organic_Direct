@@ -11,7 +11,8 @@
     width : 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 18px;    
+    padding-bottom: 18px;
+    cursor: pointer;    
 }
 .logo h2 {
     color: #F1C40F;
